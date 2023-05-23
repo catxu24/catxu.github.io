@@ -25,6 +25,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .list {
@@ -32,9 +33,14 @@ a:hover {
     font-size: 11.5pt;
 }
 
+.nav {
+    text-align:right;
+}
+
 .container div {
     max-width: 800px;
     width: 90%;
+    padding: 0 10px; 
 }
 
 div.animate {
@@ -71,8 +77,8 @@ div.animate {
 }
  
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 800px)
+  and (min-width: 320px) 
+  and (max-width: 800px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
     html {
