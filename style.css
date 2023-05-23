@@ -41,7 +41,7 @@ a:hover {
     max-width: 800px;
     width: 90%;
     padding: 0 10px;
-    height: calc(100vh - 50px); /* Adjust the height based on the desired space for URL bar */
+    height: calc(100vh - 200px);
     overflow-y: auto; 
 }
 
