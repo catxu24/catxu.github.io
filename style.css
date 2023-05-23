@@ -5,6 +5,8 @@ html, body {
     font-size: 13pt;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 html, body, .container {
@@ -25,6 +27,9 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100 vh;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .list {
@@ -35,6 +40,11 @@ a:hover {
 .container div {
     max-width: 800px;
     width: 90%;
+    box-sizing: border-box;
+}
+
+.nav {
+    text-align: right;
 }
 
 div.animate {
@@ -77,5 +87,11 @@ div.animate {
 
     html {
         font-size: 24pt;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container div {
+        width: 100%; /* Change width to 100% for narrow screens */
     }
 }
