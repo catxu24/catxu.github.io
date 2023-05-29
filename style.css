@@ -1,12 +1,11 @@
 html, body {
+    margin: 0 auto;
     background-color: #faf0e6;
     color: #2a2a2a;
     font-family: "Libre Franklin";
     font-size: 13pt;
     font-weight: 400;
     line-height: 1.5;
-    margin: 0;
-    padding: 0;
 }
 
 html, body, .container {
@@ -27,9 +26,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100 vh;
-    flex-direction: column;
-    box-sizing: border-box;
+
 }
 
 .list {
@@ -40,7 +37,6 @@ a:hover {
 .container div {
     max-width: 800px;
     width: 90%;
-    box-sizing: border-box;
 }
 
 .nav {
@@ -81,8 +77,8 @@ div.animate {
 }
  
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 800px)
+  and (min-width: 320px) 
+  and (max-width: 800px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
     html {
@@ -90,8 +86,3 @@ div.animate {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .container div {
-        width: 100%; /* Change width to 100% for narrow screens */
-    }
-}
